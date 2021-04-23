@@ -1,0 +1,145 @@
+
+/*Outside box*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color:rgb(238, 238, 238);
+  padding: 10px;
+  background: rgb(238, 238, 238);
+}
+
+/* Header Styling */
+.header {
+  padding: 100px;
+  text-align: center;
+  background:url(images/1617319296866_1617319291107_1617319289258_1617319263562_IMG_0606.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-position: center top;
+  opacity: 0.7;
+  background-size: cover;
+  width: 100%;
+
+}
+/* Header Font Styling */
+.header h1 {
+  font-size: 100px;
+  text-align: center;
+  color: rgb(238, 238, 238);
+}
+
+/* Nav Bar Style */
+.topnav {
+  font-size: 40px;
+  overflow: hidden;
+  background-color: rgb(221, 221, 221);
+}
+
+/* Links on the Nav Style */
+.topnav a {
+  float:left;
+  display: block;
+  color:rgb(51, 51, 51);
+  text-align: center;
+  padding: 8px 100px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Color While Hovering */
+.topnav a:hover {
+  background-color: rgb(51, 51, 51);
+  color: rgb(221, 221, 221);
+}
+
+/* Left column */
+.leftcolumn { 
+  background-color: rgb(51, 51, 51);  
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+/* Fake image */
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(51, 51, 51);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:rgb(51, 51, 51);
+  margin-top: 20px;
+}
+
+/* Button */
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+/* Hovering */
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+}
+
+ul#horizontal-list li {
+  display: inline;
+}
+
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+
+/* Responsive layout - when the screen is less than 410px wide, fixes everything */
+@media screen and (max-width:420px) {
+  .leftcolumn{   
+    width: 100%;
+    padding: none;
+  }
+
+  .header h1{
+    font-size: 60px;
+  }
+
+  .topnav{
+    font-size: 20px;
+  }
+
+  .topnav a{
+    padding: 8px 10px;
+  }
+
+}
